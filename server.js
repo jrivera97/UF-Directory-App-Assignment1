@@ -19,6 +19,7 @@ var requestHandler = function(request, response) {
 
 	else
 	{
+		//writeHead funciton to send 404 error
 		response.writeHead(404, {'Content-Type': 'text/plain'});
 		response.write("Bad gateway error");
 		response.end();
